@@ -1,0 +1,50 @@
+{
+  "rubric": "/Users/jhenelle/.claude/skills/issue-select/rubric.md",
+  "model": "sonnet",
+  "agreement": [
+    1,
+    1
+  ],
+  "results": [
+    {
+      "id": "issue-11",
+      "verdict": "accept",
+      "failed_checks": [
+        "beginner_friendly"
+      ],
+      "checks": [
+        {
+          "name": "unclaimed",
+          "grade": "pass",
+          "evidence": "assignees: none; linked PRs: none; 0 comments, no claim"
+        },
+        {
+          "name": "policy_allowed",
+          "grade": "pass",
+          "evidence": "CONTRIBUTING.md: no statement on AI or contribution tooling"
+        },
+        {
+          "name": "repo_in_use",
+          "grade": "pass",
+          "evidence": "archived: no; last push to any branch: 2026-08-04"
+        },
+        {
+          "name": "maintainer_active",
+          "grade": "pass",
+          "evidence": "default-branch commits on 2026-08-04, within 90 days of 2026-09-29"
+        },
+        {
+          "name": "scope_bounded",
+          "grade": "pass",
+          "evidence": "issue describes one concrete bug: a specific rewrite (strong complementary) firing multiple times on sidebar click"
+        },
+        {
+          "name": "beginner_friendly",
+          "grade": "fail",
+          "evidence": "labels are Type: bug, Category: Proof mode, Priority: Medium; no beginner label; 0 comments so no maintainer invite"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

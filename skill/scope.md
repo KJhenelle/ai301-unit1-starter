@@ -14,7 +14,7 @@ Two parts. Staff wrote the first; you write the second.
 
 Only issues in the course's Path Review repository are candidates:
 
-- Repo: `<ORG>/<PATH-REVIEW-REPO>` <!-- paste your section's repo from the Unit 1 Check-In page -->
+- Repo: `codepath/pathreview-ai301-fa26-howard` <!-- paste your section's repo from the Unit 1 Check-In page -->
 
 Do not search, fetch, or grade issues from any other repository, however
 promising. The wider GitHub comes later in the course; for now the field
@@ -36,4 +36,5 @@ you want to avoid. The skill uses this only to RANK the issues your
 rubric accepts, never to change a verdict: fit cannot rescue an issue
 your rubric rejects, and cannot sink one it accepts. -->
 
-(Write a few sentences here.)
+
+I am good in anything Python. I can pretty much do/learn anything in Python. I enjoy front end challenges however I am only moderately proficient in typescript/JavaScript. I'd like to avoid anything in a language I don't know very well like Java or Golang unless its an easy issue that i can learn quickly

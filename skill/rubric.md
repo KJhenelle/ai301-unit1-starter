@@ -34,11 +34,15 @@ will fail eval issues designed around that family.
 
 | Check | Evidence | Pass condition | Weight |
 |---|---|---|---|
-|  |  |  |  |
-
+| unclaimed |  Issue body, assignees list, and comment thread.| Issue has 0 assignees, no open linked PR attempting a fix, and no unabandoned claim comment within the last 14 days. | Required |
+| repo_in_use |  Repo facts: repository status, archiving flag, and PR activity.| Repository is not archived or marked read-only, has at least 50 stars, and has merged at least 1 pull request within the last 90 days. | required |
+| maintainer_active |Repo facts: commit history and comment timestamps.  | At least 1 commit to default branch or maintainer comment response within the last 60 days. | Required |
+| beginner_friendly |  Issue is explicitly labeled `good first issue`, `beginner-friendly`, `easy`, or a maintainer comment explicitly confirms newcomers are welcome.| Issue is explicitly labeled `good first issue`, `beginner-friendly`, `easy`, or a maintainer comment explicitly confirms newcomers are welcome. | Preferred|
 ## Verdict rule
 
 <!-- State how the grades above combine into accept or reject, and how
 unclear is treated. Example shape (write your own): "accept if every
 required check passes; preferred checks never change the verdict, they
 rank accepted issues; unclear counts as fail." -->
+
+Accept if and only if every `required` check passes. If any `required` check fails or is unclear, the verdict is reject (unclear counts as fail). The `preferred` check (`beginner_friendly`) never alters the binary verdict; it is strictly used to rank accepted issues.
